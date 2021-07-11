@@ -77,7 +77,20 @@ new Chart("myChart", {
   },
   options: {
     legend: { display: true },
-    responsive: true,
+    responsive: false,
+    scales: {
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: 'Confirmed cases'
+        }
+      }]
+    },
+    title: {
+      display: true,
+      text: 'Daily Covid-19 Cases'
+    }
   },
 });
 

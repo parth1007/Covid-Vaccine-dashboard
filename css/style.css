@@ -352,7 +352,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35rem;
+    /* width: 35rem; */
 }
 .btn1, .btn2{
     height:5rem;
@@ -574,4 +574,11 @@ li{
     .btn2{
         width: 40vw;
     }
+    .card1{ 
+        width:18rem;
+    }
+    .line{
+        width:1rem;
+    }
+
 }
