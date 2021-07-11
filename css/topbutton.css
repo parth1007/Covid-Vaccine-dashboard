@@ -1,0 +1,75 @@
+
+.center-con {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid rgb(0, 0, 0);
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+.round .sp {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 20px;
+    background: rgb(0, 0, 0);
+    transition: 0.4s ease;
+}
+
+.round .sp:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 24%;
+    top: 20px;
+}
+
+.round .sp:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 46%;
+    top: 20px;
+}
+
+.round .sp:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 24%;
+    top: 30px;
+}
+
+.round .sp:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 46%;
+    top: 30px;
+}
+
+.round:hover .sp:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.round:hover .sp:nth-child(2) {
+    transform: rotate(225deg);
+}
+
+.round:hover .sp:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.round:hover .sp:nth-child(4) {
+    transform: rotate(225deg);
+}

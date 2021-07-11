@@ -98,7 +98,7 @@ new Chart("myChart", {
 
 
 var xValues = ["18-44", "45-60", "60+"];
-var yValues = [55, 49, 44];
+var yValues = [144827614, 127856900, 99525603];
 var barColors = ["#b91d47", "#00aba9", "#2b5797"];
 
 new Chart("agechart", {

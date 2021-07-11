@@ -71,7 +71,9 @@ h1{
     justify-content: center;
     font-size: 1.6rem;
 }
-
+.btndiv:hover{
+    border: 3px solid orangered;
+}
 
 /* -------------------------------------------------------SECTION - INFOPAGE ----------------------------------------------- */
 
@@ -160,7 +162,7 @@ img{
     height: -webkit-fill-available;
 } */
 .text{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 1.7rem;
     width: 100%;
@@ -242,13 +244,14 @@ img{
 .card{
     height: 15rem;
     width: 16vw;
-    background-color: #54C2FF;
+    background-color: #efa668;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     flex-direction: column;
 }
+
 .card .data{
     margin: 0 1rem;
 }
@@ -463,6 +466,10 @@ li{
 
 @media only screen and (max-width: 1105px){
 
+
+    .text{
+        font-size: 2.5vw;
+    }
     #infopage{
         display:flex;
         justify-content: center;
@@ -544,6 +551,11 @@ li{
 }
 
 @media only screen and (max-width: 700px){
+    
+    .text{
+        font-size: 4vw;
+    }
+    
     .sidebar{
         display:none;
     }
@@ -562,6 +574,7 @@ li{
         width:11rem;
         border: 1px solid white;
     }
+
 }
 
 @media only screen and (max-width: 500px){
