@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/830401682e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" title="Home Page"> <div class="opt" id="opt1" style = "color: #d1d1d1">
+            <i class="fas fa-database fa-2x"></i>
+        </div></a>
+        <div class="grpdiv">
+            <a href="#graphs" title="Statistics"><div class="grp" id="grp1" style = "color: #d1d1d1">
+                <i class="fas fa-chart-line fa-2x" ></i>
+            </div></a>
+            <a href="#portal" title="Book Slot"><div class="grp" id="grp2" style = "color: #d1d1d1">
+                <i class="fas fa-syringe fa-2x"></i>
+            </div></a>
+            <a href="#" title="Infomation"><div class="grp" id="grp3" style = "color: #d1d1d1">
+                <i class="fas fa-info fa-2x"></i>
+            </div></a>
+        </div>
+        
+        <a href="#footer" title="Contact us"><div class="opt" id="opt4" style = "color: #d1d1d1">
+            <i class="fas fa-phone-square-alt fa-2x"></i>
+        </div></a>
+    </div>
+
+    <div class="page">
+        <h1>Vaccination Dashboard</h1>
+        <a href="#portal" class="top-btn">
+            <div class="btndiv">Book your Slot</div>
+        </a>
+
+        <section id="infopage">
+            <div class="carosel">
+
+                    <div class="slides change">
+                        <img src="assets/Images/vac1.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="slides change">
+                        <img src="assets/Images/vac1.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="slides change">
+                        <img src="assets/Images/vac1.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev" onclick="prev()">&#10094;</a>
+                    <a class="next" onclick="next()">&#10095;</a>
+
+
+                    <div class="linebar">
+                        <span class="line" onclick="current(1)"></span> 
+                        <span class="line" onclick="current(2)"></span> 
+                        <span class="line" onclick="current(3)"></span> 
+                    </div>
+
+            </div>
+            <div class="card1">
+                <div class="maindata">
+                    <h2>Total vaccine doses</h2>
+                    <h3>352345345</h3>
+                </div>
+                
+                <div class="innerdata">
+                    <div class="data data1">
+                        <h3>Dose 1</h3>
+                        <h4>22345655</h4>
+                    </div>
+                    <div class="data data2">
+                        <h3>Dose 2</h3>
+                        <h4>2345655</h4>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="card2">
+                        <div class="maindata">
+                            <h2>Today's doses</h2>
+                            <h3>352345345</h3>
+                        </div>
+                        
+                        <div class="innerdata">
+                            <div class="data data1">
+                                <h3>Dose 1</h3>
+                                <h4>22345655</h4>
+                            </div>
+                            <div class="data data2">
+                                <h3>Dose 2</h3>
+                                <h4>22345655</h4>
+                            </div>
+                        </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="maindata">
+                        <h2>Conducting sites</h2>
+                        <h3>352345</h3>
+                    </div>
+                    
+                    <div class="innerdata">
+                        <div class="data data1">
+                            <h3>Govt</h3>
+                            <h4>22655</h4>
+                        </div>
+                        <div class="data data2">
+                            <h3>Private</h3>
+                            <h4>2655</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="maindata">
+                        <h2>Total Registrations</h2>
+                        <h3>352345345</h3>
+                    </div>
+                    
+                    <div class="innerdata">
+                        <div class="data data1">
+                            <h3>18-44</h3>
+                            <h4>22345655</h4>
+                        </div>
+                        <div class="data data2">
+                            <h3>45+</h3>
+                            <h4>22375655</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="graphs">
+            <div class="trends">
+                <h1>Vaccination Trends</h1>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="charts">
+                <div class="piechart">
+                    <canvas id="agechart" style="width:100%;min-width: 20rem;max-width:600px;"></canvas></div>
+                <div class="states">
+                    <canvas id="typechart" style="width:100%;min-width: 20rem;max-width:600px;"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        
+        <section id="portal">
+            <p>Book Your Appointment</p>
+            <br>
+            <a href="https://selfregistration.cowin.gov.in/" class="btn1" target="_blank">
+                <div class="btn1">CoWIN</div>
+            </a>
+            <p class="or">---- OR BOOK APPOINTMENT USING ---</p>
+            <br>
+            <div class="appcnt">
+                <a href="https://www.aarogyasetu.gov.in/" class="btn2" target="_blank">
+                    <div class="btn2div">Aarogya setu</div>
+                </a>
+                <a href="https://web.umang.gov.in/web_new/login/" class="btn2" target="_blank">
+                    <div class="btn2div">Umang</div>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="details">
+            
+        </section>
+        <section id="footer">
+            
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Sitesoch</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="#">How To Get Vaccinated</a></li>
+  	 				            <li><a href="#">Do's and Don'ts</a></li>
+                                <!-- <li><a href="#">Order Status</a></li> -->
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </footer>
+         
+
+        </section>
+
+
+    </div>
+    
+
+<script src="js/carosel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="js/charts.js"></script>
+
+
+</body>
+</html>
