@@ -8,6 +8,7 @@ body{
     padding: 0;
     display:flex;
     flex-direction: row;
+    background: rgb(240, 239, 239);
 }
 html {
     scroll-behavior: smooth;
@@ -48,9 +49,10 @@ h1,h2,h3,h4,h5,p{
     margin-left: 5rem;
 }
 h1{
-    font-size: 2.5rem;
+    font-size: 3vw;
     margin: 2.5rem;
     display: inline-block;
+    margin-left: 10vw;
 }
 .top-btn{
     text-decoration: none;
@@ -59,20 +61,19 @@ h1{
 }
 .btndiv{
     
-    border-radius:1rem;
-    border: 1px solid orangered;
+    border-radius:0.5rem;
     height: 4rem;
     width: 12rem;
     margin-top: 3rem;
     margin-right: 8rem;
-    background-color: orange;
+    background-color: rgb(102 166 241);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
 }
 .btndiv:hover{
-    border: 3px solid orangered;
+    color:white;
 }
 
 /* -------------------------------------------------------SECTION - INFOPAGE ----------------------------------------------- */
@@ -187,7 +188,7 @@ img{
     height: 25rem;
     width: 22rem;
     background-color:#54C2FF;
-    border-radius: 20px;
+    border-radius: 15px;
     /* margin-top: 9rem; */
     /* margin-right: 3rem; */
     grid-row: 1/ span 2;
@@ -245,7 +246,7 @@ img{
     height: 15rem;
     width: 16vw;
     background-color: #efa668;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -257,7 +258,7 @@ img{
 }
 
 .card .maindata h2{
-    font-size: 1.9vw;
+    font-size: 1.8vw;
 }
 .card .maindata h3{
     font-size: 1.7vw;
@@ -268,8 +269,24 @@ img{
 .card .data h4{
     font-size: 1.5vw;
 }
+.card1{
+    background: rgb(238,174,218);
+    background: linear-gradient(0deg, rgba(238,174,218,1) 0%, rgba(148,187,233,1) 100%);
+    transition-duration: 0.3s;
 
+}
 
+#card4, #card2, #card3{
+    background: rgb(174,238,191);
+    background: linear-gradient(180deg, rgba(174,238,191,1) 53%, rgba(148,187,233,1) 100%);
+    transition-duration: 0.3s;
+}
+
+.card:hover, .card1:hover{
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.59);
+}
 
 
 /* ------------------------------------------------------SECTION - GRAPHS -------------------------------------------------------- */
@@ -360,8 +377,8 @@ img{
 .btn1, .btn2{
     height:5rem;
     width:11rem;
-    border: 1px solid white;
-    border-radius:5px;
+    border: 3px solid white;
+    border-radius:1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -547,6 +564,10 @@ li{
         .data h4{
             font-size: 1.4rem;
         }
+        h1{
+            font-size: 4.5vw;
+            margin-left: 20%;
+        }
 
 }
 
@@ -574,6 +595,10 @@ li{
         width:11rem;
         border: 1px solid white;
     }
+    h1{
+        font-size:5vw;
+        
+    }
 
 }
 
@@ -592,6 +617,10 @@ li{
     }
     .line{
         width:1rem;
+    }
+    h1{
+        font-size: 6vw;
+        margin-left: 15vw;
     }
 
 }
